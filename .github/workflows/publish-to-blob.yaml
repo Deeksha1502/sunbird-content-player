@@ -65,6 +65,9 @@ jobs:
 
       - name: Prepare content-player directory
         run: |
+          cd player/www/
+          ls -la
+          cd ../..
           cp -r player/www/preview content-player
 
       - name: Create zip artifact
